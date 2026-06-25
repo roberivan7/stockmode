@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;  
+}
+
+:root{
+    --cor-principal: #ffffff;
+    --cor-secundaria: #000000;
+    --font-primaria: "Roboto", sans-serif;
+    --font-secundaria: "Open Sans", sans-serif;
+    --font-weight: 900;
+    --tittle-size: 25px;
+    --grey: #666464;
+    --light-grey: #bdbdbd;
+}
+
+body{
+    display: flex;
+}
+
+/* ----------------------------- Menu Lateral --------------------------------------- */
+aside {
+    width: 17%;
+    height: 100vh;
+    margin-left: 15px;
+    border-right: 1px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1{
+    font-family: var(--font-primaria);
+}
+
+h3{
+    font-family: var(--font-secundaria);
+}
+
+.subtitulo_menu {
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.font_menu {
+    color: var(--grey);
+    font-family: var(--font-secundaria);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+
+ul li a{
+    padding: 10px 0px;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+
+ul li a:hover{
+    background-color: var(--light-grey);
+}
+
+ul li a {
+    font-family: var(--font-primaria);
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;    
+    gap: 9px;
+}
+
+ul li a img {
+    height: 20px;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+/* --------------------------- Index --------------------------------------------- */
+
+.container {
+    display: flex;
+    gap: 8px;
+}
+
+.cards_index img {
+    height: 28px;
+}
+
+.cardEstoque {
+    background-color: #a0e592;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cardAlert {
+    background-color: #f1cccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cardPackage {
+    background-color: #b8b2ff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cardTrend {
+    background-color: #bfb9b9;
+    border-radius: 8px;
+    padding: 10px;
+}
